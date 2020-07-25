@@ -45,7 +45,7 @@ def main():
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Recommender System","Solution Overview"]
+    page_options = ["Recommender System","Solution Overview","Data Exploration", "Our Products and Services", "About Us"]
 
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -106,6 +106,15 @@ def main():
 
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
+
+    if page_selection == "Data Exploration":
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/DataExploration.png", use_column_width=True)
+
+    if page_selection == "Our Products and Services":
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/OurProductsServices.png", use_column_width=True)
+
+    if page_selection == "About Us":
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/About%20Us.png", use_column_width=True)
 
 
 if __name__ == '__main__':
