@@ -80,51 +80,51 @@ def content_model(movie_list,top_n=10):
 
     """
     def content_generate_top_N_recommendations(movie_list, N=10):
-    """ Docstring"""
-    # Convert the string book title to a numeric index for our
-    # similarity matrix
-    try:
-        all_recommendations=[]
-        movie_title = movie_list[0]
-        movie_id = movies[movies['title']==movie_title]['movieId'].iloc[0]
-        movie_index = movieId_features_df[movieId_features_df['movieId']==movie_id].index[0]
-        # Extract all similarity values computed with the reference book title
-        sim_scores = list(enumerate(cosine_sim_items[movie_index]))
-        # Sort the values, keeping a copy of the original index of each value
-        sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
-        # Select the top-N values for recommendation
-        sim_scores = sim_scores[0:4]
-        # Collect indexes
-        movie_indices = [i[0] for i in sim_scores]
-        all_recommendations.append(list(movies.iloc[movie_indices]['title'].reset_index().drop('index',axis=1)['title']))
+        """ Docstring"""
+        # Convert the string book title to a numeric index for our
+        # similarity matrix
+        try:
+            all_recommendations=[]
+            movie_title = movie_list[0]
+            movie_id = movies[movies['title']==movie_title]['movieId'].iloc[0]
+            movie_index = movieId_features_df[movieId_features_df['movieId']==movie_id].index[0]
+            # Extract all similarity values computed with the reference book title
+            sim_scores = list(enumerate(cosine_sim_items[movie_index]))
+            # Sort the values, keeping a copy of the original index of each value
+            sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
+            # Select the top-N values for recommendation
+            sim_scores = sim_scores[0:4]
+            # Collect indexes
+            movie_indices = [i[0] for i in sim_scores]
+            all_recommendations.append(list(movies.iloc[movie_indices]['title'].reset_index().drop('index',axis=1)['title']))
 
-        movie_title = movie_list[1]
-        movie_id = movies[movies['title']==movie_title]['movieId'].iloc[0]
-        movie_index = movieId_features_df[movieId_features_df['movieId']==movie_id].index[0]
-        # Extract all similarity values computed with the reference book title
-        sim_scores = list(enumerate(cosine_sim_items[movie_index]))
-        # Sort the values, keeping a copy of the original index of each value
-        sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
-        # Select the top-N values for recommendation
-        sim_scores = sim_scores[0:3]
-        # Collect indexes
-        movie_indices = [i[0] for i in sim_scores]
-        all_recommendations.append(list(movies.iloc[movie_indices]['title'].reset_index().drop('index',axis=1)['title']))
+            movie_title = movie_list[1]
+            movie_id = movies[movies['title']==movie_title]['movieId'].iloc[0]
+            movie_index = movieId_features_df[movieId_features_df['movieId']==movie_id].index[0]
+            # Extract all similarity values computed with the reference book title
+            sim_scores = list(enumerate(cosine_sim_items[movie_index]))
+            # Sort the values, keeping a copy of the original index of each value
+            sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
+            # Select the top-N values for recommendation
+            sim_scores = sim_scores[0:3]
+            # Collect indexes
+            movie_indices = [i[0] for i in sim_scores]
+            all_recommendations.append(list(movies.iloc[movie_indices]['title'].reset_index().drop('index',axis=1)['title']))
 
-        movie_title = movie_list[2]
-        movie_id = movies[movies['title']==movie_title]['movieId'].iloc[0]
-        movie_index = movieId_features_df[movieId_features_df['movieId']==movie_id].index[0]
-        # Extract all similarity values computed with the reference book title
-        sim_scores = list(enumerate(cosine_sim_items[movie_index]))
-        # Sort the values, keeping a copy of the original index of each value
-        sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
-        # Select the top-N values for recommendation
-        sim_scores = sim_scores[0:3]
-        # Collect indexes
-        movie_indices = [i[0] for i in sim_scores]
-        all_recommendations.append(list(movies.iloc[movie_indices]['title'].reset_index().drop('index',axis=1)['title']))
-        all_recommendations = [item for sublist in all_recommendations for item in sublist]
-        #/Convert the indexes back into titles
-        return all_recommendations[:10]
-    except IndexError:
-        return('movie not in database. Sorry not sorry')
+            movie_title = movie_list[2]
+            movie_id = movies[movies['title']==movie_title]['movieId'].iloc[0]
+            movie_index = movieId_features_df[movieId_features_df['movieId']==movie_id].index[0]
+            # Extract all similarity values computed with the reference book title
+            sim_scores = list(enumerate(cosine_sim_items[movie_index]))
+            # Sort the values, keeping a copy of the original index of each value
+            sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)
+            # Select the top-N values for recommendation
+            sim_scores = sim_scores[0:3]
+            # Collect indexes
+            movie_indices = [i[0] for i in sim_scores]
+            all_recommendations.append(list(movies.iloc[movie_indices]['title'].reset_index().drop('index',axis=1)['title']))
+            all_recommendations = [item for sublist in all_recommendations for item in sublist]
+            #/Convert the indexes back into titles
+            return all_recommendations[:10]
+        except IndexError:
+            return('movie not in database. Sorry not sorry')
