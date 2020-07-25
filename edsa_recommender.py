@@ -43,7 +43,7 @@ title_list = load_movie_titles('resources/data/movies.csv')
 # App declaration
 def main():
 
-        st.sidebar.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/Company%20logo.png",
+    st.sidebar.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/Company%20logo.png",
                      use_column_width=True)
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
