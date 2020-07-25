@@ -119,6 +119,37 @@ def main():
     if page_selection == "Our Products and Services":
         st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/OurProductsServices.png", use_column_width=True)
 
+
+        # OneFlix products offered
+        st.title("Products and Services offered")
+        st.markdown("""
+                        - Work with stakeholders in any organisation to identify opportunities for leveraging company data to drive business solutions.
+                        - Assess the effectiveness and accuracy of new data sources and data gathering techniques.
+                        - Mine and analyze data from company databases to drive optimization and improvement of product development, marketing techniques and business strategies.
+                        - Intelligent Dash-boarding
+                        - Distributed computing
+                        - Story-telling and visualisation of big data
+                        - Develop custom data models and algorithms to apply to data sets.
+                        - Use predictive modeling to increase and optimize customer experiences, revenue generation, ad targeting and other business outcomes.
+                        - Develop company A/B testing framework and test model quality.
+                        - Coordinate with different functional teams to implement models and monitor outcomes.
+                        - Develop processes and tools to monitor and analyze model performance and data accuracy.
+                    """)
+
+        # Create a contact us widget
+        st.header("Contact Us")
+        st.markdown("If you wish to contact us please enter your details below and we will get back to as soon as possible")
+        st.text_input("Full Name")
+        st.text_input("Contact Number", "Optional")
+        st.text_input("Email Address")
+        st.text_area("Enter a message")
+
+        def func():
+            st.write("Submitted, Thank You")
+            return
+        if st.button("Send"):
+            func()
+
     # About Us Page
     if page_selection == "About Us":
         st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/About%20Us.png",
