@@ -79,6 +79,7 @@ def content_model(movie_list,top_n=10):
         Titles of the top-n movie recommendations to the user.
 
     """
+
     def content_generate_top_N_recommendations(movie_list, N=10):
         """ Docstring"""
         # Convert the string book title to a numeric index for our
@@ -128,3 +129,4 @@ def content_model(movie_list,top_n=10):
             return all_recommendations[:10]
         except IndexError:
             return('movie not in database. Sorry not sorry')
+    return content_generate_top_N_recommendations(movie_list, top_n)
