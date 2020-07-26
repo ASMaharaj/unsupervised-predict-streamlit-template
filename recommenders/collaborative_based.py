@@ -38,8 +38,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import CountVectorizer
 
 # Importing data
-movies_df = pd.read_csv('resources/data/movies.csv',sep = ',',delimiter=',')
-ratings_df = pd.read_csv('resources/data/ratings.csv')
+movies_df = pd.read_csv('https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/data/movies.csv',sep = ',',delimiter=',')
+ratings_df = pd.read_csv('https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/data/ratings.csv')
 ratings_df.drop(['timestamp'], axis=1,inplace=True)
 
 # We make use of an SVD model trained on a subset of the MovieLens 10k dataset.
@@ -99,7 +99,7 @@ def pred_movies(movie_list):
     return id_store
 
 # !! DO NOT CHANGE THIS FUNCTION SIGNATURE !!
-# You are, however, encouraged to change its content.  
+# You are, however, encouraged to change its content.
 def collab_model(movie_list,top_n=10):
     """Performs Collaborative filtering based upon a list of movies supplied
        by the app user.
