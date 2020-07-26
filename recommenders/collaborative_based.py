@@ -72,7 +72,7 @@ def prediction_item(item_id):
 
     predictions = []
     for ui in a_train.all_users():
-    predictions.append(model.predict(iid=item_id,uid=ui, verbose = False))
+        predictions.append(model.predict(iid=item_id,uid=ui, verbose = False))
     return predictions
 
 def pred_movies(movie_list):
@@ -95,13 +95,13 @@ def pred_movies(movie_list):
     # For each movie selected by a user of the app,
     # predict a corresponding user within the dataset with the highest rating
     for i in movie_list:
-    #movie_id = movieid_to_title_df[movieid_to_title_df['title'] == i]['movieId'].values[0]
-    predictions = prediction_item(item_id = i)
-    predictions.sort(key=lambda x: x.est, reverse=True)
-    # Take the top 10 user id's from each movie with highest rankings
+        #movie_id = movieid_to_title_df[movieid_to_title_df['title'] == i]['movieId'].values[0]
+        predictions = prediction_item(item_id = i)
+        predictions.sort(key=lambda x: x.est, reverse=True)
+        # Take the top 10 user id's from each movie with highest rankings
     for pred in predictions[:10]:
-    id_store.append(pred.uid)
-    # Return a list of user id's
+        id_store.append(pred.uid)
+            # Return a list of user id's
     return id_store
 
 def prediction(movie_title,user_id):
@@ -127,7 +127,7 @@ def prediction(movie_title,user_id):
 # !! DO NOT CHANGE THIS FUNCTION SIGNATURE !!
 # You are, however, encouraged to change its content.
 def collab_model(movie_list,top_n=10):
-    """Performs Collaborative filtering based upon a list of movies supplied
+    """ Performs Collaborative filtering based upon a list of movies supplied
     by the app user.
 
     Parameters
@@ -147,7 +147,7 @@ def collab_model(movie_list,top_n=10):
     print('first phase')
     df_init_users = train[train['userId']==movie_ids[0]]
     for i in movie_ids[1:]:
-    df_init_users=df_init_users.append(train[train['userId']==i])
+        df_init_users=df_init_users.append(train[train['userId']==i])
     # Getting the user-item matrix
     df_init_users = pd.merge(df_init_users, movieid_to_title_df, on = 'movieId', how = 'left')
     df_init_users = df_init_users.dropna()
@@ -155,16 +155,16 @@ def collab_model(movie_list,top_n=10):
 
     # Adding the movies from list into user-item matrix if not there
     for i in movie_list:
-    if i not in top_users_matrix.index.values.tolist():
-    length = len(top_users_matrix.columns)
-    df_nan = pd.DataFrame([[(np.NaN)]*length], index = [i], columns = top_users_matrix.columns)
-    top_users_matrix = top_users_matrix.append(df_nan)
+        if i not in top_users_matrix.index.values.tolist():
+            length = len(top_users_matrix.columns)
+            df_nan = pd.DataFrame([[(np.NaN)]*length], index = [i], columns = top_users_matrix.columns)
+            top_users_matrix = top_users_matrix.append(df_nan)
 
     # makinf predictions for those movies based on algorithm
     for i in top_users_matrix.columns:
-    for j in top_users_matrix.index.values.tolist():
-    if np.isnan(top_users_matrix[i].loc[j]):
-    top_users_matrix[i].loc[j] = prediction(j,i)
+        for j in top_users_matrix.index.values.tolist():
+            if np.isnan(top_users_matrix[i].loc[j]):
+                top_users_matrix[i].loc[j] = prediction(j,i)
 
     # Getting the cosine similarity matrix
     cosine_sim = cosine_similarity(top_users_matrix)
@@ -191,5 +191,5 @@ def collab_model(movie_list,top_n=10):
     # Removing chosen movies
     top_indexes = np.setdiff1d(top_50_indexes,[idx_1,idx_2,idx_3])
     for i in top_indexes[:top_n]:
-    recommended_movies.append(indices[i])
+        recommended_movies.append(indices[i])
     return recommended_movies
