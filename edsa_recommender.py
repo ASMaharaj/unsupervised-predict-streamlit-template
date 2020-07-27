@@ -142,7 +142,7 @@ def main():
     # Our Products and Services Page
     if page_selection == "Our Products and Services":
 
-        st.sidebar.video("https://www.youtube.com/watch?v=9JDzlhW3XTM")
+        st.sidebar.video("https://www.youtube.com/watch?v=QIt6ewZkeE0")
         st.sidebar.video("https://www.youtube.com/watch?v=PbMl6DjhJ1I")
         st.sidebar.video("https://www.youtube.com/watch?v=9oeGoQGt7Aos")
 
@@ -181,6 +181,11 @@ def main():
 
     # About Us Page
     if page_selection == "About Us":
+
+        st.sidebar.video("https://www.youtube.com/watch?v=e3Nl_TCQXuw")
+        st.sidebar.video("https://www.youtube.com/watch?v=Skpu5HaVkOc")
+        st.sidebar.video("https://www.youtube.com/watch?v=xNWSGRD5CzU")
+
         st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/AboutUs.png",
         use_column_width=True)
 
