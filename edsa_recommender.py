@@ -132,6 +132,11 @@ def main():
 
     # Data Exploration Page
     if page_selection == "Data Exploration":
+
+        st.sidebar.video("https://www.youtube.com/watch?v=555oiY9RWM4")
+        st.sidebar.video("https://www.youtube.com/watch?v=WTAg7aolyCY")
+        st.sidebar.video("https://www.youtube.com/watch?v=naQr0uTrH_s")
+
         st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/DataExploration.png", use_column_width=True)
 
     # Our Products and Services Page
