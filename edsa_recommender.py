@@ -141,6 +141,11 @@ def main():
 
     # Our Products and Services Page
     if page_selection == "Our Products and Services":
+
+        st.sidebar.video("https://www.youtube.com/watch?v=9JDzlhW3XTM")
+        st.sidebar.video("https://www.youtube.com/watch?v=PbMl6DjhJ1I")
+        st.sidebar.video("https://www.youtube.com/watch?v=9oeGoQGt7Aos")
+
         st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/OurProductsServices.png", use_column_width=True)
 
 
