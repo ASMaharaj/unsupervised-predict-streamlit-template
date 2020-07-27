@@ -152,7 +152,7 @@ def main():
 
     # About Us Page
     if page_selection == "About Us":
-        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/About%20Us.png",
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/AboutUs.png",
         use_column_width=True)
 
         # table of contents on the sidebar
@@ -194,13 +194,13 @@ def main():
         # Our Company background story
         toc3.title("OUR STORY")
         st.markdown("""
-                    Net Flieks started in the Summer of 2019.
+                    NetFlieks started in the Summer of 201.
                     A group of individuals came together with the same vision:
                             Create recommender systems for content that users would find interesting.
-                    A concept now brought to perfection by Net flieks of creators.
-                    Today, OneFlix are helping users in selecting various content that peaks their interests and exposing them to sources and sites that they would normally overlook which
+                    A concept now brought to perfection by NetFlieks creators.
+                    Today, NetFlieks are helping users in selecting various content that peaks their interests and exposing them to sources and sites that they would normally overlook which
                     could be of interest for them.
-                    Net Flieks features a variety of recommender systems that users can make use of, using a broad spectrum of data preprocessing techniques and parameters.
+                    NetFlieks features a variety of recommender systems that users can make use of, using a broad spectrum of data preprocessing techniques and parameters.
                     Simply put: There's content for every user, mindset and style.
                     """)
 
@@ -213,14 +213,30 @@ def main():
         caption = "Have you ever seen me and Batman in the same room😉", use_column_width =True)
 
         toc3.header("Primrose Mukhethwa Ramukhuvhathi")
+        st.markdown("""
+                    A tree hugger, love of nature and an environmentalist at heart who is fascinated by numbers . And recently have fallen for Machine Learning.
+                    """)
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/primrose.jpg", caption= "", use_column_width=True)
 
         toc3.header("Abednego Pakaree")
+        st.markdown("""
+                    Applying logic to life!
+                    """)
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/AB.jpg", caption = "", use_column_width=True)
 
-        toc3.header("netsianda khathutshelo")
+        toc3.header("Khathutshelo Netsianda")
+        st.markdown("""
+                     I am a data science/machine learning student. i am interested in developing intelligent algorithm to solve the world's problems
+                    """)
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/khathutshelo.jpg", caption="", use_column_width=True)
 
         toc3.header("Ntokozo Nkanyane")
 
         toc3.header("Tsundukani Makhubela")
+        st.markdown("""
+                    AI enthusiast & I dream in Python.
+                    """)
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/Tsundukani.png", caption="Introvert, a bit eccentric🙃", use_column_width=True)
 
         toc3.generate()
 
