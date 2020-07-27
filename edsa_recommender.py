@@ -208,12 +208,16 @@ def main():
         # Our Company background story
         toc3.title("OUR STORY")
         st.markdown("""
-                    NetFlieks started in the Summer of 201.
+                    NetFlieks started in the Summer of 2018.
+
                     A group of individuals came together with the same vision:
                             Create recommender systems for content that users would find interesting.
+
                     A concept now brought to perfection by NetFlieks creators.
+
                     Today, NetFlieks are helping users in selecting various content that peaks their interests and exposing them to sources and sites that they would normally overlook which
                     could be of interest for them.
+
                     NetFlieks features a variety of recommender systems that users can make use of, using a broad spectrum of data preprocessing techniques and parameters.
                     Simply put: There's content for every user, mindset and style.
                     """)
