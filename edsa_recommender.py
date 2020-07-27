@@ -220,10 +220,6 @@ def main():
 
         toc3.placeholder()
 
-        st.sidebar.video("https://www.youtube.com/watch?v=e3Nl_TCQXuw")
-        st.sidebar.video("https://www.youtube.com/watch?v=Skpu5HaVkOc")
-        st.sidebar.video("https://www.youtube.com/watch?v=xNWSGRD5CzU")
-
 
         # Our Company background story
         toc3.title("OUR STORY")
@@ -277,6 +273,10 @@ def main():
         st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/Tsundukani.png", caption="Introvert, a bit eccentric🙃", use_column_width=True)
 
         toc3.generate()
+
+        st.sidebar.video("https://www.youtube.com/watch?v=e3Nl_TCQXuw")
+        st.sidebar.video("https://www.youtube.com/watch?v=Skpu5HaVkOc")
+        st.sidebar.video("https://www.youtube.com/watch?v=xNWSGRD5CzU")
 
 
 
