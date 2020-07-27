@@ -182,10 +182,6 @@ def main():
     # About Us Page
     if page_selection == "About Us":
 
-        st.sidebar.video("https://www.youtube.com/watch?v=e3Nl_TCQXuw")
-        st.sidebar.video("https://www.youtube.com/watch?v=Skpu5HaVkOc")
-        st.sidebar.video("https://www.youtube.com/watch?v=xNWSGRD5CzU")
-
         st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/AboutUs.png",
         use_column_width=True)
 
@@ -223,6 +219,10 @@ def main():
         toc3 = Toc3()
 
         toc3.placeholder()
+
+        st.sidebar.video("https://www.youtube.com/watch?v=e3Nl_TCQXuw")
+        st.sidebar.video("https://www.youtube.com/watch?v=Skpu5HaVkOc")
+        st.sidebar.video("https://www.youtube.com/watch?v=xNWSGRD5CzU")
 
 
         # Our Company background story
