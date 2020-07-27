@@ -43,12 +43,12 @@ title_list = load_movie_titles('resources/data/movies.csv')
 # App declaration
 def main():
 
-    st.sidebar.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/Company%20logo.png",
+    st.sidebar.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/CompanyLogo.png",
                      use_column_width=True)
 
     # DO NOT REMOVE the 'Recommender System' option below, however,
     # you are welcome to add more options to enrich your app.
-    page_options = ["Recommender System","Solution Overview","Data Exploration", "Our Products and Services", "About Us"]
+    page_options = ["Recommender System","History Of Movies","Data Exploration", "Our Products and Services", "About Us"]
 
     # -------------------------------------------------------------------
     # ----------- !! THIS CODE MUST NOT BE ALTERED !! -------------------
@@ -103,10 +103,24 @@ def main():
     # -------------------------------------------------------------------
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
-    if page_selection == "Solution Overview":
-        st.title("Solution Overview")
-        st.write("Describe your winning approach on this page")
+    if page_selection == "History Of Movies":
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/HistoryOfMovies.png", use_column_width=True)
 
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/movies/timelineoffilmandtechnology-170905072010%5B1%5D.jpg", use_column_width=True)
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/movies/timelineoffilmandtechnology-170905072010%5B2%5D.jpg", use_column_width=True)
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/movies/timelineoffilmandtechnology-170905072010%5B3%5D.jpg", use_column_width=True)
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/movies/timelineoffilmandtechnology-170905072010%5B4%5D.jpg", use_column_width=True)
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/movies/timelineoffilmandtechnology-170905072010%5B5%5D.jpg", use_column_width=True)
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/movies/timelineoffilmandtechnology-170905072010%5B6%5D.jpg", use_column_width=True)
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/movies/timelineoffilmandtechnology-170905072010%5B7%5D.jpg", use_column_width=True)
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/movies/timelineoffilmandtechnology-170905072010%5B8%5D.jpg", use_column_width=True)
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/movies/timelineoffilmandtechnology-170905072010%5B9%5D.jpg", use_column_width=True)
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/movies/timelineoffilmandtechnology-170905072010%5B10%5D.jpg", use_column_width=True)
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/movies/timelineoffilmandtechnology-170905072010%5B11%5D.jpg", use_column_width=True)
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/movies/timelineoffilmandtechnology-170905072010%5B12%5D.jpg", use_column_width=True)
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/movies/timelineoffilmandtechnology-170905072010%5B13%5D.jpg", use_column_width=True)
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/movies/timelineoffilmandtechnology-170905072010%5B14%5D.jpg", use_column_width=True)
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/movies/timelineoffilmandtechnology-170905072010%5B15%5D.jpg", use_column_width=True)
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
 
