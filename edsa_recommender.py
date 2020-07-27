@@ -104,9 +104,9 @@ def main():
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
     if page_selection == "History Of Movies":
-        st.sidebar.video("https://www.youtube.com/watch?v=dKrVegVI0Us", use_column_width=True)
-        st.sidebar.video("https://www.youtube.com/watch?v=TcMBFSGVi1c", use_column_width=True)
-        st.sidebar.video("https://www.youtube.com/watch?v=tg52up16eq0", use_column_width=True)
+        st.sidebar.video("https://www.youtube.com/watch?v=dKrVegVI0Us")
+        st.sidebar.video("https://www.youtube.com/watch?v=TcMBFSGVi1c")
+        st.sidebar.video("https://www.youtube.com/watch?v=tg52up16eq0")
 
 
         st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/HistoryOfMovies.png", use_column_width=True)
