@@ -126,6 +126,9 @@ def main():
         st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/movies/timelineoffilmandtechnology-170905072010%5B13%5D.jpg", use_column_width=True)
         st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/movies/timelineoffilmandtechnology-170905072010%5B14%5D.jpg", use_column_width=True)
         st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/movies/timelineoffilmandtechnology-170905072010%5B15%5D.jpg", use_column_width=True)
+
+        st.info("Slidedeck courtesy from Slideshare (Mike Gunn), https://www.slideshare.net/MikeGunn/timeline-of-the-history-of-film-and-technology?from_action=save ")
+
     # You may want to add more sections here for aspects such as an EDA,
     # or to provide your business pitch.
 
@@ -138,6 +141,30 @@ def main():
         st.sidebar.video("https://www.youtube.com/watch?v=naQr0uTrH_s")
 
         st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/DataExploration.png", use_column_width=True)
+        st.header("Movie Ratings")
+        st.subheader("Number Of Ratings")
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/NumberOfRatings.PNG", use_column_width=True)
+
+        st.subheader("Total Number Of Ratings")
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/TotalNumberOfRatings.PNG", use_column_width=True)
+
+        st.subheader("Mean Rating")
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/MeanRating.PNG", use_column_width=True)
+
+        st.header("Frequency of Genres")
+        #st.subheader("Number Of Ratings")
+        st.image("https://github.com/ASMaharaj/unsupervised-predict-streamlit-template/blob/developing/resources/images/FrequencyOfGenres.PNG", use_column_width=True)
+
+        st.header("Word Clouds")
+        st.subheader("Directors")
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/DirectorsWordCloud.PNG", use_column_width=True)
+
+        st.subheader("Genre")
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/GenreWordCloud.PNG", use_column_width=True)
+
+        st.subheader("Tag")
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/TagWordCloud.PNG", use_column_width=True)
+
 
     # Our Products and Services Page
     if page_selection == "Our Products and Services":
