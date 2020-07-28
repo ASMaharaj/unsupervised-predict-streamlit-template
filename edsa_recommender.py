@@ -269,7 +269,7 @@ def main():
         toc3.title("MEET THE TEAM")
 
         toc3.header("Armaan Singh Maharaj")
-        #st.markdown("")
+        st.markdown("Ich schreibe hier was auf Deutsch, weil ich nicht weiß wie ich mich beschreiben soll. Hier ist ein zweiter Satz damit dies länger aussieht.😄")
         st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/Armaan.jpeg",
         caption = "Have you ever seen me and Batman in the same room😉", use_column_width =True)
 
