@@ -153,7 +153,7 @@ def main():
 
         st.header("Frequency of Genres")
         #st.subheader("Number Of Ratings")
-        st.image("https://github.com/ASMaharaj/unsupervised-predict-streamlit-template/blob/developing/resources/images/FrequencyOfGenres.PNG", use_column_width=True)
+        st.image("https://raw.githubusercontent.com/ASMaharaj/unsupervised-predict-streamlit-template/developing/resources/images/FrequencyOfGenres.PNG", use_column_width=True)
 
         st.header("Word Clouds")
         st.subheader("Directors")
